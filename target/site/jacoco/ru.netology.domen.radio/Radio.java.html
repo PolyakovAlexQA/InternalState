@@ -65,33 +65,35 @@
 
     public void nextStationRadio() {
 
-<span class="pc bpc" id="L68" title="1 of 2 branches missed.">        if (currentNumberStation == maxStation) {</span>
-<span class="nc" id="L69">            currentNumberStation = minStation;</span>
-<span class="nc" id="L70">            return;</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">        if (currentNumberStation == maxStation) {</span>
+<span class="fc" id="L69">            currentNumberStation = minStation;</span>
+<span class="fc" id="L70">            return;</span>
         }
 <span class="fc" id="L72">        currentNumberStation++;</span>
 <span class="fc" id="L73">    }</span>
 
 
     public void prevStationRadio() {
-<span class="pc bpc" id="L77" title="1 of 2 branches missed.">        if (currentNumberStation == minStation) {</span>
-<span class="nc" id="L78">            currentNumberStation = maxStation;</span>
-<span class="nc" id="L79">            return;</span>
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        if (currentNumberStation == minStation) {</span>
+<span class="fc" id="L78">            currentNumberStation = maxStation;</span>
+<span class="fc" id="L79">            return;</span>
         }
 <span class="fc" id="L81">        currentNumberStation--;</span>
 <span class="fc" id="L82">    }</span>
 
     public void increaseVolume() {
-<span class="pc bpc" id="L85" title="1 of 2 branches missed.">        if (currentVolume == maxVolume)</span>
-<span class="nc" id="L86">            return;</span>
-<span class="fc" id="L87">        currentVolume++;</span>
-<span class="fc" id="L88">    }</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">        if (currentVolume == maxVolume) {</span>
+<span class="fc" id="L86">            return;</span>
+        }
+<span class="fc" id="L88">        currentVolume++;</span>
+<span class="fc" id="L89">    }</span>
 
     public void decreaseVolume() {
-<span class="pc bpc" id="L91" title="1 of 2 branches missed.">        if (currentVolume == minVolume)</span>
-<span class="nc" id="L92">            return;</span>
-<span class="fc" id="L93">        currentVolume--;</span>
-<span class="fc" id="L94">    }</span>
+<span class="fc bfc" id="L92" title="All 2 branches covered.">        if (currentVolume == minVolume) {</span>
+<span class="fc" id="L93">            return;</span>
+        }
+<span class="fc" id="L95">        currentVolume--;</span>
+<span class="fc" id="L96">    }</span>
 }
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

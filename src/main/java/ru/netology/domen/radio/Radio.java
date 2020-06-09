@@ -82,14 +82,16 @@ public class Radio<currentNumberStation> {
     }
 
     public void increaseVolume() {
-        if (currentVolume == maxVolume)
+        if (currentVolume == maxVolume) {
             return;
+        }
         currentVolume++;
     }
 
     public void decreaseVolume() {
-        if (currentVolume == minVolume)
+        if (currentVolume == minVolume) {
             return;
+        }
         currentVolume--;
     }
 }
