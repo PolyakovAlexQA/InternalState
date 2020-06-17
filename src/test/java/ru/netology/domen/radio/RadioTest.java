@@ -1,11 +1,13 @@
 package ru.netology.domen.radio;
 
+import jdk.jfr.DataAmount;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class RadioTest {
-       Radio radio = new Radio(9,0,100,0,9,9);
+       Radio radio = new Radio(9,0,100,0,100,9);
 
 
     @Test
@@ -70,8 +72,8 @@ class RadioTest {
 
     @Test
     void currentVolume() {
-        radio.setCurrentVolume(5);
-        assertEquals(5, radio.getCurrentVolume());
+        radio.setCurrentVolume(101);
+        assertEquals(100, radio.getCurrentVolume());
     }
 
     @Test
