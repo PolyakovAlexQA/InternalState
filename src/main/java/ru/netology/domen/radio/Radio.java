@@ -1,14 +1,10 @@
 package ru.netology.domen.radio;
 
-
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 
 public class Radio<currentNumberStation> {
-
-
 
     private int maxStation = 9;
     private int minStation = 0;
@@ -25,7 +21,6 @@ public class Radio<currentNumberStation> {
         this.currentVolume = currentVolume;
         this.currentNumberStation = currentNumberStation;
     }
-
 
     public int getCurrentVolume() {
         return currentVolume;
