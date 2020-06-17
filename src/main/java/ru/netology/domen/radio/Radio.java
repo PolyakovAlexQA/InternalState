@@ -1,7 +1,11 @@
 package ru.netology.domen.radio;
 
+import jdk.jfr.DataAmount;
+
+
 
 public class Radio<currentNumberStation> {
+
 
 
     private int maxStation = 9;
