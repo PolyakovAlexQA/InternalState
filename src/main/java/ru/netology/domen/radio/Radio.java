@@ -1,8 +1,10 @@
 package ru.netology.domen.radio;
 
-import jdk.jfr.DataAmount;
 
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 
 public class Radio<currentNumberStation> {
 
