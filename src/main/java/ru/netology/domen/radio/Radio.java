@@ -2,7 +2,7 @@ package ru.netology.domen.radio;
 
 
 
-public class Radio<currentNumberStation> {
+public class Radio {
 
     private int maxStation = 9;
     private int minStation = 0;
