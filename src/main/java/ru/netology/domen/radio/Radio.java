@@ -1,8 +1,6 @@
 package ru.netology.domen.radio;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+
 
 public class Radio<currentNumberStation> {
 
