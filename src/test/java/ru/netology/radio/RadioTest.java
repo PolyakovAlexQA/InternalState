@@ -1,13 +1,13 @@
 package ru.netology.radio;
 
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class RadioTest {
+
     Radio radio = new Radio(9,0,100,0,100,9);
-
-
-   @Test
+    @Test
     void prevCurrentStation() {
         radio.setCurrentNumberStation(0);
         radio.prevStationRadio();
