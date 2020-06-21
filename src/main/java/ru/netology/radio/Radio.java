@@ -1,14 +1,25 @@
-package ru.netology.domen.radio;
-
-public class Radio<currentNumberStation> {
+package ru.netology.radio;
 
 
-    private final int maxStation = 9;
-    private final int minStation = 0;
-    private final int maxVolume = 10;
-    private final int minVolume = 0;
+public class Radio {
+
+
+    private int maxStation = 9;
+    private int minStation = 0;
+    private int maxVolume = 100;
+    private int minVolume = 0;
     private int currentVolume;
     private int currentNumberStation;
+
+    public Radio(int maxStation, int minStation, int maxVolume, int minVolume, int currentVolume, int currentNumberStation) {
+        this.maxStation = maxStation;
+        this.minStation = minStation;
+        this.maxVolume = maxVolume;
+        this.minVolume = minVolume;
+        this.currentVolume = currentVolume;
+        this.currentNumberStation = currentNumberStation;
+    }
+
 
     public int getCurrentVolume() {
         return currentVolume;
