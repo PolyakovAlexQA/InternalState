@@ -1,4 +1,4 @@
-package ru.netology.domen.radio;
+package ru.netology.radio;
 
 
 import org.junit.jupiter.api.Test;
