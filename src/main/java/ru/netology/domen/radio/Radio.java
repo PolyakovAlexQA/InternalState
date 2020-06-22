@@ -1,6 +1,12 @@
 package ru.netology.domen.radio;
 
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+
 
 public class Radio {
 
