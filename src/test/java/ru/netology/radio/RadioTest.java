@@ -8,48 +8,50 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 class RadioTest {
-       Radio radio = new Radio(9,0,100,0,100,9);
+       Radio radio = new Radio();
 
 
     @Test
 
     void prevCurrentStation() {
-        radio.setCurrentNumberStation(0);
+        Radio radio = new Radio(10,0,100,0,100,0);
         radio.prevStationRadio();
-        assertEquals(9, radio.getCurrentNumberStation());
+        assertEquals(10, radio.getCurrentNumberStation());
     }
 
     @Test
     void increaseCurrentStation() {
-        radio.setCurrentNumberStation(8);
+        Radio radio = new Radio(10,0,100,0,100,9);
         radio.nextStationRadio();
-        assertEquals(9, radio.getCurrentNumberStation());
+        assertEquals(10, radio.getCurrentNumberStation());
     }
 
     @Test
     void decreaseCurrentStation() {
-        radio.setCurrentNumberStation(7);
+        Radio radio = new Radio(10,0,100,0,100,10);
         radio.prevStationRadio();
-        assertEquals(6, radio.getCurrentNumberStation());
+        assertEquals(9, radio.getCurrentNumberStation());
     }
 
     @Test
     void nextCurrentStation() {
-        radio.setCurrentNumberStation(9);
+        radio.setCurrentNumberStation(10);
         radio.nextStationRadio();
         assertEquals(0, radio.getCurrentNumberStation());
     }
 
     @Test
     void currentStation() {
-        radio.setCurrentNumberStation(4);
-        assertEquals(4, radio.getCurrentNumberStation());
+        Radio radio = new Radio(10,0,100,0,100,10);
+
+        assertEquals(10, radio.getCurrentNumberStation());
     }
 
     @Test
     void MaxStationRadio() {
-        radio.setCurrentNumberStation(9);
-        assertEquals(9, radio.getMaxStation(), radio.getCurrentNumberStation());
+        Radio radio = new Radio(10,0,100,0,100,9);
+
+        assertEquals(10, radio.getMaxStation(), radio.getCurrentNumberStation());
     }
 
     @Test
@@ -74,8 +76,9 @@ class RadioTest {
 
     @Test
     void currentVolume() {
-        radio.setCurrentVolume(101);
-        assertEquals(100, radio.getCurrentVolume());
+        Radio radio = new Radio(10,0,100,0,3,9);
+
+        assertEquals(3, radio.getCurrentVolume());
     }
 
     @Test
@@ -104,7 +107,7 @@ class RadioTest {
 
     @Test
     void increaseVolume() {
-        radio.setCurrentVolume(99);
+        Radio radio = new Radio(10,0,100,0,99,9);
         radio.increaseVolume();
         radio.increaseVolume();
         assertEquals(100, radio.getCurrentVolume());
@@ -112,7 +115,7 @@ class RadioTest {
 
     @Test
     void decreaseVolume() {
-        radio.setCurrentVolume(1);
+        Radio radio = new Radio(10,0,100,0,1,9);
         radio.decreaseVolume();
         radio.decreaseVolume();
         assertEquals(0, radio.getCurrentVolume());
